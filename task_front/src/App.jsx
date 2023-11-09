@@ -16,8 +16,6 @@ function App() {
       </div>
       <div>test 3</div>
       <div>khshashbshkbx</div>
-      <div>test 2</div>
-      <div>khshashbsh</div>
     </div>
   );
 }
