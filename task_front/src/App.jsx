@@ -3,6 +3,9 @@ import ToDo from "./components/toDo";
 import Done from "./components/done";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 
+import SignUp from "./signUp";
+import Login from "./login";
+
 function App() {
   let date = new Date();
   let options = {
@@ -29,6 +32,7 @@ function App() {
           <Done />
         </div>
       </div>
+      <div className="w-full h-full"></div>
     </div>
   );
 }
