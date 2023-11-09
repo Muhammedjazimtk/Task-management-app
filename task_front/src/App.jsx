@@ -15,7 +15,7 @@ function App() {
         {day}
       </div>
       <div>
-        test
+        test 2
       </div>
     </div>
   );
