@@ -14,9 +14,8 @@ function App() {
       <div className="flex justify-center items-center font-bold text-[#38bdf8] text-2xl bg-[#1e293b] w-full h-[100px]">
         {day}
       </div>
-      <div>
-        test
-      </div>
+      <div>test</div>
+      <div>khshashbshkbx</div>
     </div>
   );
 }
