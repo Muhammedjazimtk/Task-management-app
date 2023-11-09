@@ -1,5 +1,7 @@
 import "./App.css";
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import SignUp from "./signUp";
+import Login from "./login";
 
 function App() {
   let date = new Date();
@@ -17,7 +19,9 @@ function App() {
         <p className="w-1/3 text-center">{day}</p>
         <div className="w-1/3 text-end"><AccountCircleRoundedIcon fontSize="large"/></div>
       </div>
-      <div className="w-full h-full"></div>
+      <div className="w-full h-full">
+        
+      </div>
     </div>
   );
 }
