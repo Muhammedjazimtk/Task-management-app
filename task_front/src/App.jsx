@@ -14,9 +14,14 @@ function App() {
       <div className="flex justify-center items-center font-bold text-[#38bdf8] text-2xl bg-[#1e293b] w-full h-[100px]">
         {day}
       </div>
+<<<<<<< HEAD
       <div>
         test 2
       </div>
+=======
+      <div>test</div>
+      <div>khshashbshkbx</div>
+>>>>>>> bd28b184427dce4ccb9e77c26213dddcec8d6464
     </div>
   );
 }
