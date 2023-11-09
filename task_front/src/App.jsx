@@ -15,8 +15,6 @@ function App() {
         {day}
       </div>
       <div>khshashbshkbx</div>
-      <div>test 2</div>
-      <div>khshashbsh</div>
     </div>
   );
 }
