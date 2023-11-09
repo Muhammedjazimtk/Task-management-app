@@ -15,6 +15,7 @@ function App() {
         {day}
       </div>
       <div>khshashbshkbx</div>
+      <div>poda </div>
     </div>
   );
 }
