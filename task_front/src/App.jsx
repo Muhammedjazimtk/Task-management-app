@@ -17,8 +17,7 @@ function App() {
         <p className="w-1/3 text-center">{day}</p>
         <div className="w-1/3 text-end"><AccountCircleRoundedIcon fontSize="large"/></div>
       </div>
-      <div>khshashbshkbx</div>
-      <div>poda </div>
+      <div className="w-full h-full"></div>
     </div>
   );
 }
