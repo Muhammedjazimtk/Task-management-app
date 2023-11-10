@@ -24,7 +24,7 @@ function App() {
           <AccountCircleRoundedIcon fontSize="large" />
         </div>
       </div>
-      <div className="w-full h-full bg-red-300 flex gap-2 ">
+      <div className="w-full h-full  flex gap-2 ">
         <div id="to-do" className="h-full w-1/2 ">
           <ToDo />
         </div>
