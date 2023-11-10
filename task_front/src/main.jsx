@@ -3,17 +3,22 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import SignUp from "./signUp.jsx";
 import Login from "./login.jsx";
+import ErrorPage from "./error.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+    ],
   },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
+
   {
     path: "/login",
     element: <Login />,

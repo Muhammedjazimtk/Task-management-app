@@ -21,7 +21,9 @@ function App() {
         <p className="w-1/3 text-xl"> Tast Manager App</p>
         <p className="w-1/3 text-center">{day}</p>
         <div className="w-1/3 text-end">
-          <AccountCircleRoundedIcon fontSize="large" />
+          <a href="/signUP">
+            <AccountCircleRoundedIcon fontSize="large" />
+          </a>
         </div>
       </div>
       <div className="w-full h-full  flex gap-2 ">

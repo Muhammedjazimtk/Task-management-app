@@ -63,24 +63,32 @@ export default function ToDo() {
         </button>
       </div>
       <div className=" w-full h-full">
-        {items.map((item, idx) => {
-          return (
-            <div key={idx} className="flex  gap-2 m-3">
-              <input type="checkbox" onClick={handleCheck}></input>
+        {items.length ? (
+          items.map((item, idx) => {
+            return (
+              <div key={idx} className="flex w-full gap-2 p-3">
+                <input type="checkbox" onClick={handleCheck}></input>
 
-              <p className="text-white ">{item}</p>
-              <div className="flex w-full justify-end gap-1">
-                <div id={idx} className="cursor-pointer" onClick={handleEdit}>
-                  <EditIcon id={idx} className="text-white" />
-                </div>
+                <p className="text-white min-w-[500px]  ">{item}</p>
+                <div className="flex w-full justify-end gap-1">
+                  <div id={idx} className="cursor-pointer" onClick={handleEdit}>
+                    <EditIcon id={idx} className="text-white" />
+                  </div>
 
-                <div id={idx} className="cursor-pointer" onClick={handleDelete}>
-                  <DeleteIcon id={idx} className="text-white" />
+                  <div
+                    id={idx}
+                    className="cursor-pointer"
+                    onClick={handleDelete}
+                  >
+                    <DeleteIcon id={idx} className="text-white" />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        ) : (
+          <p className="text-white pl-4">No Tasks</p>
+        )}
       </div>
     </div>
   );
