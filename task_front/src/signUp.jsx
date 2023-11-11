@@ -1,5 +1,3 @@
-import { Link } from "@mui/material";
-
 function SignUp() {
   return (
     <div className="h-screen bg-[#0f172a] flex justify-center items-center">
@@ -9,19 +7,19 @@ function SignUp() {
           <form action="" className="font-semibold">
             <div className="mb-5">
               <label htmlFor="fn">Name </label>
-              <input type="text" id="fn" className="w-full" />
+              <input type="text" id="fn" className="w-full rounded-md" />
             </div>
             <div className="mb-5">
               <label htmlFor="">DOB </label>
-              <input type="date" className="w-full" />
+              <input type="date" className="w-full rounded-md" />
             </div>
             <div className="mb-5">
               <label htmlFor="email">Email </label>
-              <input type="email" id="email" className="w-full" />
+              <input type="email" id="email" className="w-full rounded-md" />
             </div>
             <div className="mb-5">
               <label htmlFor="ln">Password </label>
-              <input type="text" id="ln" className="w-full" />
+              <input type="text" id="ln" className="w-full rounded-md" />
             </div>
             <div className="flex justify-center mb-5">
               <div className="bg-[#0f172a] max-w-fit text-[#38bdf8] rounded-md">
@@ -31,7 +29,7 @@ function SignUp() {
             <div className="text-sm text-center">
               <p>
                 Already have an account?
-                <a href="/login" className="ml-2">
+                <a href="/login" className="underline">
                   Login
                 </a>
               </p>
