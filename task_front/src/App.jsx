@@ -1,7 +1,7 @@
 import "./App.css";
 import ToDo from "./components/toDo";
 import Done from "./components/done";
-import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 import SignUp from "./signUp";
 import Login from "./login";
@@ -22,7 +22,7 @@ function App() {
         <p className="w-1/3 text-center">{day}</p>
         <div className="w-1/3 text-end">
           <a href="/signUP">
-            <AccountCircleRoundedIcon fontSize="large" />
+            <LogoutIcon fontSize="medium" />
           </a>
         </div>
       </div>
