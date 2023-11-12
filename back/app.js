@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const encrypt = require("mongoose-encryption");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -8,7 +9,22 @@ app.use(express.static("public"));
 
 const app = express();
 
-mongoose.connect();
+mongoose.connect("mongodb://localhost:27017/todoDB");
+
+const todoSchema = new mongoose.Schema({
+  item: String,
+  name: String,
+});
+
+const userSchema = new mongoose.Schema({
+  email: String,
+  password: String,
+});
+userSchema.plugin(encrypt, { secret: secret, encryptedFields: ["password"] });
+
+const User = new mongoose.model("User", userSchema);
+
+const secret = "thisisalongsecret";
 
 app.get("/", (req, res) => {
   res.send("hello world");
